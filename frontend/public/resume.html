@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shabarish Vemula - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+            padding: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        header {
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1 {
+            font-size: 36px;
+            color: #1e40af;
+            margin-bottom: 8px;
+        }
+        
+        .subtitle {
+            font-size: 20px;
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+        
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        
+        section {
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 22px;
+            color: #1e40af;
+            border-bottom: 2px solid #93c5fd;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+        
+        h3 {
+            font-size: 18px;
+            color: #1f2937;
+            margin-bottom: 5px;
+        }
+        
+        .summary {
+            text-align: justify;
+            color: #4b5563;
+            line-height: 1.8;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 15px;
+        }
+        
+        .skill-category {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .skill-category h4 {
+            color: #1e40af;
+            font-size: 15px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .skill-category p {
+            font-size: 13px;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+        
+        .experience-item {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+        
+        .job-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 8px;
+        }
+        
+        .company {
+            font-weight: 600;
+            color: #1f2937;
+            font-size: 16px;
+        }
+        
+        .date {
+            font-size: 14px;
+            color: #6b7280;
+            font-style: italic;
+        }
+        
+        ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        li {
+            margin-bottom: 6px;
+            color: #4b5563;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .highlight {
+            color: #2563eb;
+            font-weight: 600;
+        }
+        
+        @media print {
+            body {
+                padding: 20px;
+            }
+            
+            .contact-info a {
+                color: #2563eb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Shabarish Vemula</h1>
+        <div class="subtitle">Senior Software Engineer</div>
+        <div class="contact-info">
+            <span>📧 shabarish.devops@gmail.com</span>
+            <span>📱 503-421-4570</span>
+            <span>🔗 <a href="https://github.com/shabarishdevops-svg">github.com/shabarishdevops-svg</a></span>
+            <span>💼 <a href="https://www.linkedin.com/in/shabarish-vemula-626ab8153/">LinkedIn Profile</a></span>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Software engineer with a passion for building developer productivity tools and internal platforms that scale across large engineering organizations. Over the past year, I've worked across infrastructure, GenAI, and developer experience — contributing to production systems that directly improve how hundreds of engineers work every day. My work spans the full stack, from building React-based developer portals with Backstage to designing scalable backend services with Node.js and deploying infrastructure on AWS and Kubernetes. I've integrated LLMs into production workflows, built custom GitHub Copilot extensions, and worked extensively with modern AI tooling including RAG, prompt engineering, and the Model Context Protocol. I'm particularly interested in the intersection of AI and developer experience — creating tools that make engineering teams more productive, reduce cognitive load, and enable self-service workflows at scale.
+        </p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h4>Languages</h4>
+                <p>TypeScript, Python, JavaScript, Bash/Shell</p>
+            </div>
+            <div class="skill-category">
+                <h4>Frontend Development</h4>
+                <p>React, Material-UI, Backstage, Plugin Development</p>
+            </div>
+            <div class="skill-category">
+                <h4>Backend Development</h4>
+                <p>Node.js, Express, REST API Design</p>
+            </div>
+            <div class="skill-category">
+                <h4>Cloud & Infrastructure</h4>
+                <p>AWS (EKS, EC2, S3, IAM), Kubernetes, Helm, Terraform</p>
+            </div>
+            <div class="skill-category">
+                <h4>Data & Pipelines</h4>
+                <p>Apache Airflow, Change Data Capture (CDC), PostgreSQL</p>
+            </div>
+            <div class="skill-category">
+                <h4>AI & GenAI</h4>
+                <p>LLM Integrations, RAG, GitHub Copilot Extensions, Cursor AI, Prompt Engineering, MCP</p>
+            </div>
+            <div class="skill-category">
+                <h4>DevOps & CI/CD</h4>
+                <p>GitHub Actions, Jenkins, Docker, GitOps Practices</p>
+            </div>
+            <div class="skill-category">
+                <h4>Auth & Security</h4>
+                <p>JWT, Okta, OAuth 2.0, Bearer Token Authentication</p>
+            </div>
+            <div class="skill-category">
+                <h4>Observability</h4>
+                <p>Prometheus, Metrics Instrumentation, Structured Logging</p>
+            </div>
+            <div class="skill-category">
+                <h4>Developer Tooling</h4>
+                <p>Backstage, Internal Developer Portals, Self-Service Tooling</p>
+            </div>
+            <div class="skill-category">
+                <h4>API Integrations</h4>
+                <p>Jira REST API, GitHub API, Third-Party API Integrations</p>
+            </div>
+            <div class="skill-category">
+                <h4>Additional Technologies</h4>
+                <p>XML/Handlebars Templating, Semantic Matching, Cross-Team Platform Collaboration</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Professional Experience</h2>
+        
+        <div class="experience-item">
+            <div class="job-header">
+                <div>
+                    <h3>Senior Software Engineer</h3>
+                    <div class="company">Focus: Developer Productivity & Internal Platforms</div>
+                </div>
+                <div class="date">Recent</div>
+            </div>
+            <ul>
+                <li>Built and maintained developer productivity tools and internal platforms serving hundreds of engineers across large organizations</li>
+                <li>Developed React-based <span class="highlight">developer portals using Backstage</span>, creating self-service workflows that reduced operational overhead</li>
+                <li>Designed and implemented <span class="highlight">scalable backend services</span> using Node.js and Express with RESTful API architecture</li>
+                <li>Integrated <span class="highlight">LLMs into production workflows</span>, including custom GitHub Copilot extensions and RAG-based systems</li>
+                <li>Deployed and managed infrastructure on <span class="highlight">AWS (EKS, EC2, S3, IAM)</span> and Kubernetes with Helm charts</li>
+                <li>Built data pipelines using <span class="highlight">Apache Airflow</span> and implemented Change Data Capture (CDC) solutions</li>
+                <li>Implemented authentication and authorization using <span class="highlight">JWT, Okta, and OAuth 2.0</span> with bearer token flows</li>
+                <li>Established observability practices with <span class="highlight">Prometheus metrics</span> and structured logging</li>
+                <li>Created CI/CD pipelines using <span class="highlight">GitHub Actions and Jenkins</span> following GitOps principles</li>
+                <li>Integrated with external APIs including <span class="highlight">Jira REST API and GitHub API</span> for workflow automation</li>
+                <li>Worked extensively with <span class="highlight">GenAI technologies</span>: prompt engineering, Model Context Protocol (MCP), and AI-powered developer tools</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Technical Contributions</h2>
+        <ul>
+            <li><strong>Developer Experience Platform:</strong> Built comprehensive internal developer portal using Backstage with custom plugins for service discovery and documentation</li>
+            <li><strong>GenAI Integration:</strong> Developed LLM-powered tools including GitHub Copilot extensions and RAG systems for code documentation</li>
+            <li><strong>Infrastructure Automation:</strong> Implemented Infrastructure as Code using Terraform and managed Kubernetes clusters on AWS EKS</li>
+            <li><strong>API Platform:</strong> Designed and deployed RESTful API services with Node.js handling high-throughput workloads</li>
+            <li><strong>Data Pipelines:</strong> Created robust data processing pipelines using Apache Airflow with PostgreSQL backends</li>
+            <li><strong>CI/CD Excellence:</strong> Established automated deployment pipelines reducing deployment time and increasing reliability</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Areas of Expertise</h2>
+        <ul>
+            <li><strong>Developer Productivity:</strong> Building tools and platforms that accelerate engineering workflows</li>
+            <li><strong>Full-Stack Development:</strong> End-to-end application development from React frontends to Node.js backends</li>
+            <li><strong>Cloud-Native Architecture:</strong> Designing scalable systems on AWS with Kubernetes orchestration</li>
+            <li><strong>AI/ML Integration:</strong> Incorporating LLMs and GenAI capabilities into production systems</li>
+            <li><strong>Platform Engineering:</strong> Creating self-service internal platforms that scale across organizations</li>
+            <li><strong>DevOps & Automation:</strong> Streamlining deployment processes and infrastructure management</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Technical Proficiencies</h2>
+        <p style="color: #4b5563; line-height: 1.8;">
+            <strong>Programming:</strong> TypeScript, Python, JavaScript, Bash/Shell | 
+            <strong>Frontend:</strong> React, Material-UI, Backstage | 
+            <strong>Backend:</strong> Node.js, Express, REST APIs | 
+            <strong>Cloud:</strong> AWS (EKS, EC2, S3, IAM), Kubernetes, Helm, Terraform | 
+            <strong>Data:</strong> PostgreSQL, Apache Airflow, CDC | 
+            <strong>AI/ML:</strong> LLMs, RAG, GitHub Copilot, Prompt Engineering, MCP | 
+            <strong>DevOps:</strong> Docker, GitHub Actions, Jenkins, GitOps | 
+            <strong>Security:</strong> JWT, OAuth 2.0, Okta | 
+            <strong>Monitoring:</strong> Prometheus, Structured Logging
+        </p>
+    </section>
+</body>
+</html>
