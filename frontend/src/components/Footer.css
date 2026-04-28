@@ -1,0 +1,26 @@
+.footer {
+  background-color: #0a0e17;
+  padding: 40px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-content {
+  text-align: center;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #71717a;
+  margin-bottom: 8px;
+}
+
+.footer-subtitle {
+  font-size: 13px;
+  color: #52525b;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 32px 0;
+  }
+}
